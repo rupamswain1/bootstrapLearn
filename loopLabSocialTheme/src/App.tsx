@@ -8,7 +8,7 @@ import Home from './components/homeSection/Home.component';
 function App() {
   return (
     <div className="App">
-      {/* <Navigationbar /> */}
+      <Navigationbar />
       <Home />
     </div>
   );
