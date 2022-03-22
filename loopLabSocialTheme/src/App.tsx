@@ -5,12 +5,17 @@ import 'font-awesome/css/font-awesome.min.css';
 import Navigationbar from './components/navbar/Navbar.component';
 import Home from './components/homeSection/Home.component';
 import Explore from './components/explore/Explore';
+import Create from './components/create/Create';
+import Share from './components/share/Share';
+
 function App() {
   return (
     <div className="App">
       <Navigationbar />
       <Home />
       <Explore />
+      <Create />
+      <Share />
     </div>
   );
 }

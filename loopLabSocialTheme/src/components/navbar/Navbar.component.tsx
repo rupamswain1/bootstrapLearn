@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-
+import Scrollspy from 'react-scrollspy';
 import './navbar.style.scss';
 const Navigationbar = () => {
   return (
@@ -15,17 +15,23 @@ const Navigationbar = () => {
       <Container>
         <Navbar.Brand href="#home">LoopLab</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse
-          id="responsive-navbar-nav"
-          className="justify-content-end"
+        <Scrollspy
+          className="scrollspy"
+          items={['home-section', 'explore', 'create', 'share']}
+          currentClassName="isCurrent"
         >
-          <Nav className="ml-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#explore">Explore</Nav.Link>
-            <Nav.Link href="#create">Create</Nav.Link>
-            <Nav.Link href="#share">Share</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+          <Navbar.Collapse
+            id="responsive-navbar-nav"
+            className="justify-content-end"
+          >
+            <Nav className="ml-auto">
+              <Nav.Link href="#home-section">Home</Nav.Link>
+              <Nav.Link href="#explore">Explore</Nav.Link>
+              <Nav.Link href="#create">Create</Nav.Link>
+              <Nav.Link href="#share">Share</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Scrollspy>
       </Container>
     </Navbar>
   );
