@@ -7,6 +7,7 @@ import Home from './components/homeSection/Home.component';
 import Explore from './components/explore/Explore';
 import Create from './components/create/Create';
 import Share from './components/share/Share';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Explore />
       <Create />
       <Share />
+      <Footer />
     </div>
   );
 }

@@ -2,20 +2,22 @@
   "name": "looplabsocialtheme",
   "private": true,
   "version": "0.0.0",
+  "homepage":"https://rupamswain1.github.io/looplab",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.0.0",
-    "@types/react-scrollspy": "^3.3.5",
     "bootstrap": "^5.1.3",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.2.1",
     "react-dom": "^17.0.2",
-    "react-scrollspy": "^3.4.3",
     "sass": "^1.49.9",
     "scss": "^0.2.4"
   },

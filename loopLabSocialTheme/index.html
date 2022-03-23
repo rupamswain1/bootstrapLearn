@@ -6,8 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LoopLab</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#main-nav" id="home-section">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+     $('body').scrollspy({target:"#main-nav"});
+
+     $('#main-nav a').on('click',function(event){
+       if(this.hash!==""){
+         event.preventDefault();
+
+         const hash=this.hash;
+         $('html',body).animate({
+           scrollTop:$(hash).offset().top
+         },800,function(){
+           whindow.location.hash=hash;
+         })
+       }
+     })
+    </script>
   </body>
 </html>

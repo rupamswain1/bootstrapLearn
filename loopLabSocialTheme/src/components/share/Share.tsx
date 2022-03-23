@@ -22,7 +22,7 @@ const Share: React.FC = () => {
         </Container>
       </section>
 
-      <section id="explore-share" className="bg-light">
+      <section id="explore-share" className="bg-light text-dark">
         <Container className="py-5">
           <Row className="text-start">
             <Col md={6}>
